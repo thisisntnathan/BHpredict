@@ -6,10 +6,10 @@ This work started as a final project for Cornell's CHEME 6880 (Industrial Big Da
 ## Dataset
 
 X: 4140 reactions from High Throughput Screening  
-    - 15 aryl halides  
-    - 4 ligands  
-    - 3 bases  
-    - 23 isoxazole additives  
+        - 15 aryl halides  
+        - 4 ligands  
+        - 3 bases  
+        - 23 isoxazole additives  
 Y: reaction yields  
 Citation: 1  
 
