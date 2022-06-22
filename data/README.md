@@ -24,6 +24,12 @@ ys=xy['yield']
 
 ## Notes
 
-1. Control wells have been removed from the dataset  
-2. Each dataset includes the label column `'yields'`  
-3. `BH_CR_numbers` is very useful for both one-hot encoding and stratified CV  
+Control wells have been removed from the dataset  
+Each dataset includes the label column `'yields'`  
+`BH_CR_numbers` is very useful for both one-hot encoding and stratified CV  
+
+```python
+# To load in indices by compound number for a CV iterator or one-hot encoding
+xNum_pkl= open('./data/BH_CR_numbers.pkl', 'rb')
+xNum= pickle.load(xNum_pkl).drop('yield', axis=1)
+```
