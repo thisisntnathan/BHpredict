@@ -2,9 +2,7 @@
 
 This folder contains .pkl and .csv files of the HTE data from Ahneman, *et al*.  
 
-## Getting the data
-
-To unpickle the data:  
+## Unpickling the data
 
 ```python
 import pickle
