@@ -1,6 +1,9 @@
 # BHpredict
 
 An extension of the work of Doyle and coworkers on the prediction of Buchwald-Hartwig cross coupling yields.  
+
+This project is a work in progress!!!  
+
 This project started as a final deliverable for Cornell's CHEME 6880 (Industrial Big Data Analytics and Machine Learning) and was basically a re-implementation of Ahneman and Żurański's analysis in Python using the original 120 DFT features.<sup>1,2</sup>
 
 ## Dataset
@@ -17,7 +20,6 @@ Y: reaction yields
 - CHEME6880Project - Original project files  
 - data - Datasets in .csv and .pkl format  
 - DFTanalysis - Analysis of DFT featurized data  
-
 
 ## References
 
