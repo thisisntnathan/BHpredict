@@ -1,0 +1,265 @@
+DFT Features - LOMOCV
+Best Models
+
+--------------------------------------------
+Linear Models
+
+The model: OLS
+Training MSE: 209.27486
+Test MSE: 27097189118.02183
+Test RMSE: 164612.23866
+Test R2: -32733729.15271
+
+The model: scaled OLS
+Training MSE: 210.29635
+Test MSE: 339936144549670062915584.00000
+Test RMSE: 583040431316.44824
+Test R2: -410646948522119266304.00000
+
+The model: Ridge Regression | alpha: 0.09102981779915217
+Training MSE: 224.27040
+Test MSE: 298.05597
+Test RMSE: 17.26430
+Test R2: 0.63994
+
+The model: Scaled Ridge Regression | alpha: 244.205309454865
+Training MSE: 254.24908
+Test MSE: 319.31606
+Test RMSE: 17.86942
+Test R2: 0.61426
+
+The model: Lasso Regression | alpha: 39.48949
+Training MSE: 353.31235
+Test MSE: 377.79230
+Test RMSE: 19.43688
+Test R2: 0.54362
+
+The model: Scaled Lasso Regression | alpha: 0.21558
+Training MSE: 250.12168
+Test MSE: 330.77352
+Test RMSE: 18.18718
+Test R2: 0.60042
+
+The model: Elastic Net Regression | alpha: 39.48949 | l1 ratio: 1.00000
+Training MSE: 353.31235
+Test MSE: 377.79230
+Test RMSE: 19.43688
+Test R2: 0.54362
+
+The model: Scaled Elastic Net Regression | alpha: 0.09332 | l1 ratio: 0.10000
+Training MSE: 257.44908
+Test MSE: 320.73931
+Test RMSE: 17.90920
+Test R2: 0.61254
+
+The best model: SGDRegressor(alpha=1000.0, early_stopping=True, learning_rate='adaptive')
+Training MSE: 180985313868911971277996032.00000
+Test MSE: 178801775922945972062126080.00000
+Test R2: -215994694445812424900608.00000
+
+The best model: SGDRegressor(alpha=0.1, early_stopping=True, learning_rate='adaptive')
+Training MSE: 260.15522
+Test MSE: 322.17176
+Test RMSE: 17.94914
+Test R2: 0.61081
+
+--------------------------------------------
+GLM
+
+The unscaled model: TweedieRegressor(max_iter=1000, power=1)
+Training MSE: 739.75493
+Test MSE: 832.17817
+Test R2: -0.00528
+
+The best model: TweedieRegressor(alpha=0.2, max_iter=1000, power=0)
+Training MSE: 276.53003
+Test MSE: 332.48008
+Test R2: 0.59836
+
+The Zuranski model: TweedieRegressor(alpha=0.1, power=0)
+Training MSE: 260.06268
+Test MSE: 321.39541
+Test RMSE: 17.92750
+Test R2: 0.61175
+
+--------------------------------------------
+k-NN
+
+The best model: KNeighborsRegressor(n_neighbors=3, p=1, weights='distance')
+Training MSE: 0.00000
+Test MSE: 238.23095
+Test RMSE: 15.43473
+Test R2: 0.71221
+
+The best model: KNeighborsRegressor(n_neighbors=10, p=1, weights='distance')
+Training MSE: 0.00000
+Test MSE: 174.05911
+Test RMSE: 13.19315
+Test R2: 0.78973
+
+The best model: KNeighborsRegressor(p=1, weights='distance')
+Training MSE: 0.00000
+Test MSE: 150.19646
+Test RMSE: 12.25547
+Test R2: 0.81856
+
+The Zuranski model: KNeighborsRegressor(n_neighbors=3)
+Training MSE: 169.40975
+Test MSE: 175.38819
+Test RMSE: 13.24342
+Test R2: 0.78813
+
+--------------------------------------------
+SVR
+
+The unscaled model: SVR(C=1000.0)
+Training MSE: 312.09472
+Test MSE: 334.14335
+Test R2: 0.59635
+
+The best model: SVR(C=100.0)
+Training MSE: 84.66643
+Test MSE: 185.98374
+Test RMSE: 13.63759
+Test R2: 0.77533
+
+The best model: SVR(C=10)
+Training MSE: 183.45476
+Test MSE: 231.24919
+Test RMSE: 15.20688
+Test R2: 0.72065
+
+The Zuranski model: SVR(C=0.5, gamma=0.007)
+Training MSE: 421.20806
+Test MSE: 495.41375
+Test RMSE: 22.25789
+Test R2: 0.40153
+
+--------------------------------------------
+Trees
+
+The unscaled model: DecisionTreeRegressor(min_samples_leaf=300)
+Training MSE: 360.47375
+Test MSE: 588.46026
+Test R2: 0.28913
+
+The best model: DecisionTreeRegressor(min_samples_leaf=300)
+Training MSE: 360.47375
+Test MSE: 588.46026
+Test RMSE: 24.25820
+Test R2: 0.28913
+
+The best model: RandomForestRegressor(n_estimators=300)
+Training MSE: 6.72118
+Test MSE: 367.71620
+Test RMSE: 19.17593
+Test R2: 0.55579
+
+The best model: RandomForestRegressor(max_features='sqrt', n_estimators=300)
+Training MSE: 7.78959
+Test MSE: 174.49538
+Test RMSE: 13.20967
+Test R2: 0.78921
+
+The best model: RandomForestRegressor(max_features='log2', n_estimators=300)
+Training MSE: 10.53292
+Test MSE: 173.58045
+Test RMSE: 13.17499
+Test R2: 0.79031
+
+The Zuranski model: RandomForestRegressor(n_estimators=20)
+Training MSE: 8.63755
+Test MSE: 372.43733
+Test RMSE: 19.29864
+Test R2: 0.55009
+
+The best model: GradientBoostingRegressor()
+Training MSE: 99.10524
+Test MSE: 262.52054
+Test RMSE: 16.20249
+Test R2: 0.68287
+
+The best model: GradientBoostingRegressor(n_estimators=200)
+Training MSE: 77.51768
+Test MSE: 259.66457
+Test RMSE: 16.11411
+Test R2: 0.68632
+
+The best model: AdaBoostRegressor(base_estimator=DecisionTreeRegressor(max_depth=3),
+                  learning_rate=0.1, loss='exponential', n_estimators=100)
+Training MSE: 241.67828
+Test MSE: 353.44687
+Test RMSE: 18.80018
+Test R2: 0.57303
+
+*** Marginal improvment with early stopping ***
+The best model: XGBRegressor(base_score=0.5, booster='gbtree', colsample_bylevel=1,
+             colsample_bynode=1, colsample_bytree=1, enable_categorical=False,
+             gamma=0, gpu_id=-1, importance_type=None,
+             interaction_constraints='', learning_rate=0.3, max_delta_step=0,
+             max_depth=3, min_child_weight=1, missing=nan,
+             monotone_constraints='()', n_estimators=30, n_jobs=8,
+             num_parallel_tree=1, predictor='auto', random_state=0, reg_alpha=0,
+             reg_lambda=1, scale_pos_weight=1, subsample=1, tree_method='exact',
+             validate_parameters=1, verbosity=None)
+Training MSE: 105.41709
+Test MSE: 293.98311
+Test RMSE: 17.14594
+Test R2: 0.64486
+
+The best model: XGBRegressor(base_score=0.5, booster='gbtree', colsample_bylevel=1,
+             colsample_bynode=1, colsample_bytree=1, enable_categorical=False,
+             gamma=0, gpu_id=-1, importance_type=None,
+             interaction_constraints='', learning_rate=0.3, max_delta_step=0,
+             max_depth=3, min_child_weight=1, missing=nan,
+             monotone_constraints='()', n_estimators=30, n_jobs=8,
+             num_parallel_tree=1, predictor='auto', random_state=0, reg_alpha=0,
+             reg_lambda=1, scale_pos_weight=1, subsample=1, tree_method='exact',
+             validate_parameters=1, verbosity=None)
+Training MSE: 103.14910
+Test MSE: 295.52073
+Test RMSE: 17.19072
+Test R2: 0.64301
+
+The Zuranski model: XGBRegressor(base_score=0.5, booster='gbtree', colsample_bylevel=1,
+             colsample_bynode=1, colsample_bytree=1, enable_categorical=False,
+             gamma=0, gpu_id=-1, importance_type=None,
+             interaction_constraints='', learning_rate=0.3, max_delta_step=0,
+             max_depth=6, min_child_weight=1, missing=nan,
+             monotone_constraints='()', n_estimators=15, n_jobs=8,
+             num_parallel_tree=1, predictor='auto', random_state=0, reg_alpha=0,
+             reg_lambda=1, scale_pos_weight=1, subsample=1, tree_method='exact',
+             validate_parameters=1, verbosity=None)
+Training MSE: 44.93218
+Test MSE: 301.77429
+Test RMSE: 17.37165
+Test R2: 0.63545
+
+--------------------------------------------
+Single-layer NN
+
+The best model: MLPRegressor(alpha=1e-05)
+Training MSE: 440.70763
+Test MSE: 439.80700
+Test RMSE: 20.97158
+Test R2: 0.46871
+
+The best model: MLPRegressor(hidden_layer_sizes=(10,))
+Training MSE: 153.56718
+Test MSE: 242.54174
+Test RMSE: 15.57375
+Test R2: 0.70701
+
+The best model: MLPRegressor(hidden_layer_sizes=(6,), max_iter=10000)
+Training MSE: 144.94959
+Test MSE: 231.67839
+Test RMSE: 15.22099
+Test R2: 0.72013
+
+The Zuranski model: Pipeline(steps=[('standardscaler', StandardScaler()),
+                ('mlpregressor',
+                 MLPRegressor(hidden_layer_sizes=(4,), max_iter=10000))])
+Training MSE: 156.74751
+Test MSE: 280.71653
+Test RMSE: 16.75460
+Test R2: 0.66089
