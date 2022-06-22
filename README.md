@@ -19,7 +19,7 @@ Y: reaction yields
 
 - CHEME6880Project - Original project files  
 - data - Datasets in .csv and .pkl format  
-- DFTanalysis - Analysis of DFT featurized data  
+<!-- - DFTanalysis - Analysis of DFT featurized data   -->
 
 ## References
 
