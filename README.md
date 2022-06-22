@@ -1,17 +1,17 @@
 # BHpredict
 
 An extension of the work of Doyle and coworkers on the prediction of Buchwald-Hartwig cross coupling yields.  
-This work started as a final project for Cornell's CHEME 6880 (Industrial Big Data Analytics and Machine Learning) which was basically a re-implementation of Ahneman^1^ and Żurański's^2^ analysis in Python using the original 120 DFT features.
+This work started as a final project for Cornell's CHEME 6880 (Industrial Big Data Analytics and Machine Learning) which was basically a re-implementation of Ahneman<sup>1</sup> and Żurański's<sup>2</sup> analysis in Python using the original 120 DFT features.
 
 ## Dataset
 
-X: 4140 reactions from High Throughput Screening
-    15 aryl halides
-    4 ligands
-    3 bases
-    23 isoxazole additives
-Y: reaction yields
-Citation: 1
+X: 4140 reactions from High Throughput Screening  
+    15 aryl halides  
+    4 ligands  
+    3 bases  
+    23 isoxazole additives  
+Y: reaction yields  
+Citation: 1  
 
 ## References
 
