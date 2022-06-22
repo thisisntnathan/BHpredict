@@ -1,6 +1,6 @@
 # Datasets
 
-This folder contains .pkl and .csv files of the HTE data from Ahneman, *et al*.  
+This folder contains ready to use .pkl and .csv files of the HTE data from Ahneman, *et al*.  
 
 ## Unpickling the data
 
@@ -24,7 +24,7 @@ ys=xy['yield']
 ## Notes
 
 - Control wells have been removed from the dataset  
-- Each dataset includes the label column `'yields'`  
+- Each dataset includes the label column `'yield'`  
 - `BH_CR_numbers` is very useful for both one-hot encoding and stratified CV:  
 
 ```python
