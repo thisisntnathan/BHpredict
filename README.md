@@ -1,8 +1,8 @@
 # BHpredict
 
-An extension of the work of Doyle and coworkers on the prediction of Buchwald-Hartwig cross coupling yields.  
+This project is a work in progress!!! It will eventually host all of the code for this preprint.  Right now I'm just uploading parts as I finish them.  
 
-This project is a work in progress!!!  
+An extension of the work of Doyle and coworkers on the prediction of Buchwald-Hartwig cross coupling yields.    
 
 This project started as a final deliverable for Cornell's CHEME 6880 (Industrial Big Data Analytics and Machine Learning) and was basically a re-implementation of Ahneman and Żurański's analysis in Python using the original 120 DFT features.<sup>1,2</sup>
 
