@@ -17,7 +17,7 @@ Y: reaction yields
 
 ## Map
 
-- CHEME6880Project - Original project files  
+- CHEME6880Project - Original project files (warning: these files are very rough and poorly coded examples of early versions of this project. This analysis was cleaned up and placed in the DFT analysis folder below)  
 - data - Datasets in .csv and .pkl format  
 <!-- - DFTanalysis - Analysis of DFT featurized data   -->
 
